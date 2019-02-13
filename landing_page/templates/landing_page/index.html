@@ -1,0 +1,301 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+
+  <!-- Personal styles -->
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Nunito|Lato" rel="stylesheet">
+
+  <title>IlanaLab</title>
+
+  <style>
+  .parallaxImage{
+    background-image: url('{% static 'img/Recursos-10.png' %}');
+  }
+  .hero-container-bg{
+    background-image: url('{% static 'img/Recursos-02.png' %}');
+  }
+  @font-face {
+    font-family: 'Comfortaa';
+    src: URL('{% static 'fonts/Comfortaa/Comfortaa-Regular.ttf' %}') format('truetype');
+  }
+  @font-face {
+    font-family: 'Rubik';
+    src: URL('{% static 'fonts/Rubik/Rubik-Bold.ttf' %}') format('truetype');
+  }
+  .titles{
+    font-family: 'Rubik';
+  }
+  .IlanaOrange{
+    background-color: #d17b2e;
+  }
+  .IlanaTextOrange{
+    color: #d17b2e;
+  }
+  .IlanaIcons{
+    height: 24px;
+  }
+  .IlanaYellow{
+    background-color: #eece6a
+  }
+  p{
+    color: #969797;
+    font-family: 'Comfortaa';
+  }
+  </style>
+</head>
+
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="successModalLabel">Correo enviado</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Gracias por contactarte con nostros, te responderemos lo antes posible!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn IlanaYellow text-black titles" data-dismiss="modal">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero-container-bg">
+    <!-- Just an image -->
+    <nav class="navbar navbar-light transparent-navbar">
+      <div class="container">
+        <div class="row justify-content-md-cent">
+            <div class="col-8">
+                <a class="navbar-brand logo--container" href="#">
+                  <img src="{% static 'img/Recursos-00.png' %}" alt="Logo empresa">
+                </a>
+            </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero--section">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-8">
+            <h2 class="text-white titles">NOS APASIONA<br> COMPARTIR LO QUE<br> DISFRUTAMOS HACER!</h2>
+            <h4 class="">#CreamosTuWeb</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+    <section class="container mt-5">
+        <div class="row justify-content-md-center mt-2">
+          <div class="col-12">
+              <h2 class="text-center titles">NUESTROS <span class="IlanaTextOrange">SERVICIOS</span></h2>
+          </div>
+        </div>
+        <div class="row justify-content-center"> 
+          <div class="col-lg-3 col-sm-12 text-center">
+              <img class="w-50 mx-auto" src="{% static 'img/Recursos-03.png' %}" />
+              <h4 class="titles">PÁGINAS WEB</h4>
+              <p>Tus páginas adaptables a tus sitios de escritorio</p>
+          </div>
+          <div class="col-lg-3 col-sm-12 text-center">
+              <img class="w-50" src="{% static 'img/Recursos-04.png' %}">
+              <h4 class="titles">E-COMMERCE</h4>
+              <p>Tus páginas adaptables a tus dispositivos móviles de gran pantalla</p>
+          </div>
+          <div class="col-lg-3 col-sm-12 text-center">
+              <img class="w-50" src="{% static 'img/Recursos-05.png' %}">
+              <h4 class="titles">TESTING</h4>
+              <p>Tus páginas adaptables a tus celulares</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-12 text-center">
+              <h2 class="titles text-black">TODAS NUESTRAS <span class="IlanaTextOrange">WEB</span> INCLUYEN</h2>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="text-center col-lg-3 ">
+            <img src="{% static 'img/Recursos-06.png' %}" class="w-25" alt="">      
+            <p>Dominio y hosting por un año</p>                
+          </div>
+          <div class="text-center col-lg-3 ">
+            <img src="{% static 'img/Recursos-07.png' %}" class="w-25" alt="">     
+            <p>Administrador de contenido</p>                
+          </div>
+          <div class="text-center col-lg-3 ">
+            <img src="{% static 'img/Recursos-08.png' %}" class="w-25" alt="">     
+            <p>Adaptada a diferentes dispositivos</p>                
+          </div>
+          <div class="text-center col-lg-3 ">
+            <img src="{% static 'img/Recursos-09.png' %}" class="w-25" alt="">           
+            <p>Whatsapp</p>                
+          </div>
+        </div>
+    </section>
+
+  <section id="parallax">
+      <div class="parallaxImage">
+        <div class="container l-5">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <h4 class="titles text-white">¡CREAMOS TU SITIO WEB RESPONSIVE!</h4>
+              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis neque temporibus sapiente similique asperiores velit </p>
+            </div>
+            <div class="col-lg-5 text-center">
+                <button type="button" class="btn titles btn-block py-2 IlanaYellow text-black" data-toggle="modal" data-target="#exampleModal">
+                    Contáctanos
+                </button>   
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">¡Déjanos llamarte!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <form method="post">{% csrf_token %}
+                  <div class="form-group">
+                      <label>Nombre *</label>
+                      <div class="input-group">
+                          {{form.name}}
+                      </div>
+                      {{form.name.errors}}
+                  </div>
+                  <div class="form-group">
+                      <label>Email *</label>
+                      <div class="input-group">
+                          {{form.email}}
+                      </div>
+                      {{form.email.errors}}
+                  </div>
+                  <div class="form-group">
+                      <label>Celular *</label>
+                      <div class="input-group">
+                          {{form.celular}}
+                      </div>
+                      {{form.celular.errors}}
+                  </div>
+                  <div class="text-center mt-4">
+                      <input type="submit" class="btn btn-block py-2 IlanaYellow text-black titles" value="Enviar">
+                  </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <section>
+    <div class="apptitudPages">
+      <div class="container">
+        <ul class="nav nav-pills mb-3 list--pages" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Landings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">E-commerce</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="row justify-content-md-center">
+              <div class="col-lg-4 text-center">
+                  <img class="img-fluid w-50" src="{% static 'img/Recursos-11.png' %}" alt="">
+                  <h5 class="text-center titles">LANDING PAGE</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel pulvinar tortor. Donec congue eu mauris in lacinia. Donec massa diam, porttitor quis maximus at, vulputate non leo</p>
+              </div>
+              <div class="col-lg-4 text-center">
+                  <img class="img-fluid w-50" src="{% static 'img/Recursos-12.png' %}" alt="">
+                  <h5 class="text-center titles">INFORMATIVA</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel pulvinar tortor. Donec congue eu mauris in lacinia. Donec massa diam, porttitor quis maximus at, vulputate non leo</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row  align-items-center">
+              <div class="col-12 col-md-6">
+                <div class="card-pages">
+                  <a class="container--image-card" href="#">
+                    <img class="image-card" src="{% static 'img/e-commerce.jpg' %}" alt="image landing">
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 ">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae fugiat voluptas sapiente, quidem maiores illo enim impedit veniam cumque nulla doloribus numquam, deserunt accusantium facilis provident cum alias a similique.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-fluid mt-4 IlanaOrange">
+      <div class="row pt-4 pb-3 justify-content-center">
+          <div class="col-lg-3 text-center">
+            <img style="height: 24px;" src="{% static 'img/Recursos-14.png' %}" alt="FAQ">
+            <span class="titles text-white">FAQ</span>
+          </div>
+          <div class="col-lg-3 text-center right-divider">
+                <p class="text-white">Contacto&emsp;|&emsp;Términos y condiciones</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <img class="IlanaIcons" src="{% static 'img/Recursos-15.png' %}" alt="Instagram">
+            <img class="IlanaIcons" src="{% static 'img/Recursos-16.png' %}" alt="Facebook">
+            <img class="IlanaIcons" src="{% static 'img/Recursos-17.png' %}" alt="Twitter">              
+          </div>
+      </div>
+    </div>
+    <p class="text-center">Copyright Ⓒ Power by ilanalab S.A.S 2019</p>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+    {%if 'ok' in request.GET %}
+    <script>
+      $('#successModal').modal('show')
+    </script>
+  {% endif %}
+
+</body>
+
+</html>
