@@ -16,14 +16,12 @@ class LandingPageView(FormView):
     form_class = ContactForm
 
     def form_valid(self, form):
-        #send mail
         info = form.cleaned_data
-        print(info)
         email = EmailMessage(
             "Formulario de contacto Ilana",
             "Hola, {} con el email {} y el celular {}, ha solicitado que lo contactes por medio de la landing page de IlanaLab".format(info['name'], info['email'], info['celular']),
-            settings.EMAIL_USER,#el que envía
-            ["jsanz@apptitud.com.co"],#el que recibe xd
+            settings.EMAIL_USER,
+            ["jsanz@apptitud.com.co"],
         )
         try:
             email.send()  
