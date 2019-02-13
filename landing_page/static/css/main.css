@@ -125,12 +125,13 @@ body {
 }
 
 .parallaxImage {
-    background-size: cover;
+    background-size: 150%;
     background-attachment: fixed;
     background-position: center;
-    height: 400px;
+    background-repeat: no-repeat;
+    height: 300px;
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 .text--parallax__image {
