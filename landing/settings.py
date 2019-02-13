@@ -123,7 +123,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_USER = 'Clinket <no-reply@clinket.com>'
+EMAIL_USER = 'ilanalab S.A.S <no-reply@ilanalab.com>'
 EMAIL_HOST_USER = 'apptitud'
 EMAIL_HOST_PASSWORD = 'jkdsjk4534.sd!"'
 EMAIL_PORT = 587

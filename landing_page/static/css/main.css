@@ -172,11 +172,12 @@ body {
 /* estilos personalizados bootsrap */
 
      a{
-        color: #1d4875;
+        color: #969797;
     }
 
     .nav-pills .nav-link.active{
         background-color: #d17b2e;
+        font-weight: bold;
     }
 
 /* cards section */

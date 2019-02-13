@@ -33,8 +33,22 @@
     font-family: 'Rubik';
     src: URL('{% static 'fonts/Rubik/Rubik-Bold.ttf' %}') format('truetype');
   }
+  @font-face {
+    font-family: 'RubikText';
+    src: URL('{% static 'fonts/Rubik/Rubik-Medium.ttf' %}') format('truetype');
+  }
+  @font-face {
+    font-family: 'RubikTextRegular';
+    src: URL('{% static 'fonts/Rubik/Rubik-Regular.ttf' %}') format('truetype');
+  }
   .titles{
     font-family: 'Rubik';
+  }
+  .itemsRubik{
+    font-family: 'RubikText';
+  }
+  .itemsRubikRegular{
+    font-family: 'RubikTextRegular';
   }
   .IlanaOrange{
     background-color: #d17b2e;
@@ -51,6 +65,11 @@
   p{
     color: #969797;
     font-family: 'Comfortaa';
+  }
+  hr.new5 {
+    border: 5px solid #C02E40;
+    border-radius: 5px;
+    max-width: 70px;
   }
   </style>
 </head>
@@ -83,7 +102,7 @@
       <div class="container">
         <div class="row justify-content-md-cent">
             <div class="col-8">
-                <a class="navbar-brand logo--container" href="#">
+                <a class="navbar-brand logo--container" style="margin-left: 180px;" href="#">
                   <img src="{% static 'img/Recursos-00.png' %}" alt="Logo empresa">
                 </a>
             </div>
@@ -95,8 +114,7 @@
       <div class="container">
         <div class="row justify-content-md-center">
           <div class="col-8">
-            <h2 class="text-white titles">NOS APASIONA<br> COMPARTIR LO QUE<br> DISFRUTAMOS HACER!</h2>
-            <h4 class="">#CreamosTuWeb</h4>
+            <h1 class="text-white titles">NOS APASIONA<br> COMPARTIR LO QUE<br> DISFRUTAMOS HACER!</h2>
           </div>
         </div>
       </div>
@@ -110,20 +128,23 @@
               <h2 class="text-center titles">NUESTROS <span class="IlanaTextOrange">SERVICIOS</span></h2>
           </div>
         </div>
-        <div class="row justify-content-center"> 
+        <div class="row justify-content-center mt-4"> 
           <div class="col-lg-3 col-sm-12 text-center">
-              <img class="w-50 mx-auto" src="{% static 'img/Recursos-03.png' %}" />
+              <img class="w-50 mx-auto pb-4" src="{% static 'img/Recursos-03.png' %}" />
               <h4 class="titles">PÁGINAS WEB</h4>
-              <p>Tus páginas adaptables a tus sitios de escritorio</p>
+              <hr class="new5" />
+              <p>Un emprendedor que toma riesgos no puede negarse la posibilidad de contarle al mundo entero lo que hace, iniciar su presencia en internet hace parte de su estrategia primoridial.</p>
           </div>
           <div class="col-lg-3 col-sm-12 text-center">
-              <img class="w-50" src="{% static 'img/Recursos-04.png' %}">
+              <img class="w-50 pb-4" src="{% static 'img/Recursos-04.png' %}">
               <h4 class="titles">E-COMMERCE</h4>
-              <p>Tus páginas adaptables a tus dispositivos móviles de gran pantalla</p>
+              <hr class="new5" />
+              <p>Vender por internet es sencillo y rápido. Cuando una empresa elige ampliar su proyección de ventas y conquistar nuevos clintes, es el momento de tener una tienda online o sitio e-commerce. Es el momento perfecto para que le cuentes al mundo lo que vendes permitiéndole a tus nuevos clientes formas de pago seguros por tu tienda online</p>
           </div>
           <div class="col-lg-3 col-sm-12 text-center">
-              <img class="w-50" src="{% static 'img/Recursos-05.png' %}">
+              <img class="w-50 pb-4" src="{% static 'img/Recursos-05.png' %}">
               <h4 class="titles">TESTING</h4>
+              <hr class="new5" />
               <p>Tus páginas adaptables a tus celulares</p>
           </div>
         </div>
@@ -135,22 +156,22 @@
               <h2 class="titles text-black">TODAS NUESTRAS <span class="IlanaTextOrange">WEB</span> INCLUYEN</h2>
           </div>
         </div>
-        <div class="row pt-3">
-          <div class="text-center col-lg-3 ">
-            <img src="{% static 'img/Recursos-06.png' %}" class="w-25" alt="">      
-            <p>Dominio y hosting por un año</p>                
+        <div class="row pt-3 justify-content-center">
+          <div class="text-center col-lg-2 ">
+            <img src="{% static 'img/Recursos-06.png' %}" class="w-25 pb-2" alt="">    
+            <h6 class="itemsRubik text-black">Dominio y hosting por un año</h6>                
           </div>
-          <div class="text-center col-lg-3 ">
-            <img src="{% static 'img/Recursos-07.png' %}" class="w-25" alt="">     
-            <p>Administrador de contenido</p>                
+          <div class="text-center col-lg-2 ">
+            <img src="{% static 'img/Recursos-07.png' %}" class="w-25 pb-2" alt="">     
+            <h6 class="itemsRubik text-black">Administrador de contenido</h6>                
           </div>
-          <div class="text-center col-lg-3 ">
-            <img src="{% static 'img/Recursos-08.png' %}" class="w-25" alt="">     
-            <p>Adaptada a diferentes dispositivos</p>                
+          <div class="text-center col-lg-2 ">
+            <img src="{% static 'img/Recursos-08.png' %}" class="w-25 pb-2" alt="">     
+            <h6 class="itemsRubik text-black">Adaptada a diferentes dispositivos</h6>                
           </div>
-          <div class="text-center col-lg-3 ">
-            <img src="{% static 'img/Recursos-09.png' %}" class="w-25" alt="">           
-            <p>Whatsapp</p>                
+          <div class="text-center col-lg-2 ">
+            <img src="{% static 'img/Recursos-09.png' %}" class="w-25 pb-2" alt="">           
+            <h6 class="itemsRubik text-black">Whatsapp</h6>                
           </div>
         </div>
     </section>
@@ -158,14 +179,13 @@
   <section id="parallax">
       <div class="parallaxImage">
         <div class="container l-5">
-          <div class="row align-items-center">
-            <div class="col-lg-7">
-              <h4 class="titles text-white">¡CREAMOS TU SITIO WEB RESPONSIVE!</h4>
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis neque temporibus sapiente similique asperiores velit </p>
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <h1 class="titles text-white">#CreamosTuWeb</h1>
             </div>
-            <div class="col-lg-5 text-center">
+            <div class="col-lg-3 text-center">
                 <button type="button" class="btn titles btn-block py-2 IlanaYellow text-black" data-toggle="modal" data-target="#exampleModal">
-                    Contáctanos
+                  Déjanos llamarte
                 </button>   
             </div>
           </div>
@@ -206,6 +226,10 @@
                       </div>
                       {{form.celular.errors}}
                   </div>
+                  <div class="form-check text-center">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Acepto los <a href="">Términos y condiciones</a></label>
+                  </div>
                   <div class="text-center mt-4">
                       <input type="submit" class="btn btn-block py-2 IlanaYellow text-black titles" value="Enviar">
                   </div>
@@ -221,10 +245,10 @@
       <div class="container">
         <ul class="nav nav-pills mb-3 list--pages" id="pills-tab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Landings</a>
+            <a class="nav-link active itemsRubikRegular" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Landings</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">E-commerce</a>
+            <a class="nav-link itemsRubikRegular" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" >E-commerce</a>
           </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
@@ -233,12 +257,14 @@
               <div class="col-lg-4 text-center">
                   <img class="img-fluid w-50" src="{% static 'img/Recursos-11.png' %}" alt="">
                   <h5 class="text-center titles">LANDING PAGE</h5>
+                  <hr class="new5" />
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel pulvinar tortor. Donec congue eu mauris in lacinia. Donec massa diam, porttitor quis maximus at, vulputate non leo</p>
               </div>
               <div class="col-lg-4 text-center">
                   <img class="img-fluid w-50" src="{% static 'img/Recursos-12.png' %}" alt="">
                   <h5 class="text-center titles">INFORMATIVA</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel pulvinar tortor. Donec congue eu mauris in lacinia. Donec massa diam, porttitor quis maximus at, vulputate non leo</p>
+                  <hr class="new5" />
+                  <p>Tu empresa debe empezar a ganar terreno en el mundo digital, tus clientes prospectos están consultando todo el día en la internet. No te quedes atrás. Cuéntale a tu mercado ojetivo toda la información de tu empresa, no te ocultes mas.</p>
               </div>
             </div>
           </div>
@@ -264,14 +290,14 @@
   <footer>
     <div class="container-fluid mt-4 IlanaOrange">
       <div class="row pt-4 pb-3 justify-content-center">
-          <div class="col-lg-3 text-center">
+          <div class="col-lg-2 text-center">
             <img style="height: 24px;" src="{% static 'img/Recursos-14.png' %}" alt="FAQ">
             <span class="titles text-white">FAQ</span>
           </div>
-          <div class="col-lg-3 text-center right-divider">
-                <p class="text-white">Contacto&emsp;|&emsp;Términos y condiciones</p>
+          <div class="col-lg-5 text-center right-divider">
+                <p class="text-white">contacto@ilanalab.com&emsp;|&emsp;Términos y condiciones</p>
           </div>
-          <div class="col-lg-3 text-center">
+          <div class="col-lg-2 text-center">
             <img class="IlanaIcons" src="{% static 'img/Recursos-15.png' %}" alt="Instagram">
             <img class="IlanaIcons" src="{% static 'img/Recursos-16.png' %}" alt="Facebook">
             <img class="IlanaIcons" src="{% static 'img/Recursos-17.png' %}" alt="Twitter">              
