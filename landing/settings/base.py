@@ -26,7 +26,6 @@ SECRET_KEY = '_kej#bxj!7im9)v@8q#ez9!w(*ry**la9j%@2qjkh=t&6p6i5a'
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -128,4 +127,3 @@ EMAIL_HOST_USER = 'apptitud'
 EMAIL_HOST_PASSWORD = 'jkdsjk4534.sd!"'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-

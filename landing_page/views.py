@@ -1,13 +1,10 @@
-from django.shortcuts import render
-from django.shortcuts import redirect
+
+from django.conf import settings
+from django.core.mail import EmailMessage
 from django.urls import reverse
 from django.views.generic.edit import FormView
-from .forms import ContactForm
-from django.http import HttpResponse
-from django.core.mail import EmailMessage
-from django.conf import settings
 
-# Create your views here.
+from .forms import ContactForm
 
 
 class LandingPageView(FormView):
@@ -24,11 +21,10 @@ class LandingPageView(FormView):
             ["czuniga@ilanalab.com"],
         )
         try:
-            email.send()  
+            email.send()
         except e:
-            print(e)     
+            print(e)
         return super().form_valid(form)
-
 
     def get_success_url(self):
         return reverse("index") + "?ok"
