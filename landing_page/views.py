@@ -21,7 +21,7 @@ class LandingPageView(FormView):
             "Formulario de contacto Ilana",
             "Hola, {} con el email {} y el celular {}, ha solicitado que lo contactes por medio de la landing page de IlanaLab".format(info['name'], info['email'], info['celular']),
             settings.EMAIL_USER,
-            ["jsanz@apptitud.com.co"],
+            ["czuniga@ilanalab.com"],
         )
         try:
             email.send()  
