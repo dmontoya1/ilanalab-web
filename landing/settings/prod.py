@@ -5,7 +5,11 @@ ALLOWED_HOSTS = ['www.ilanalab.com', 'ilanalab.com', ]
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ilanalab'
+        'NAME': 'ilana',
+        'USER': 'ubuntu',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
